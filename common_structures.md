@@ -9,7 +9,7 @@ A user account on Dataporten. More information on [UserIDs](https://docs.datapor
 
 ```
 { 
-  "actor": {
+	"actor": {
 		"account": {
 			"homepage": "https://auth.dataporten.no",
 			"name": "76a7a061-3c55-430d-8ee0-6f82ec42501f"
