@@ -1,11 +1,21 @@
 # Common Structures 
 Common Structures gives guidance on the way statements following the profile may be structured, including the use of extensions.
 
+* [Actor](#actor)
+* [Verb](#verb)
+* [Object](#object)
+* [Result](#result)
+* [Context](#context)
+* [Extensions](#extensions)
+
+<a name="actor"></a>
 ## Actor
 The profile supports both Agent and Group as objectType of Actor.
 
 ### Agent 
-A user account on Dataporten. More information on [UserIDs](https://docs.dataporten.no/docs/userid/).
+
+##### Dataporten
+A user account on Dataporten. More information on Dataporten [UserIDs](https://docs.dataporten.no/docs/userid/).
 
 ``` Javascript
 "actor": {
@@ -18,7 +28,9 @@ A user account on Dataporten. More information on [UserIDs](https://docs.datapor
 ```
 
 ### Group
-An identified group on Dataporten. More information on [Groups](https://docs.dataporten.no/docs/groups/).
+
+##### Dataporten
+An identified group on Dataporten. More information on Dataporten [Groups](https://docs.dataporten.no/docs/groups/).
 
 ``` Javascript
 "actor": {
@@ -30,6 +42,7 @@ An identified group on Dataporten. More information on [Groups](https://docs.dat
 }
 ```
 
+<a name="verb"></a>
 ## Verb
 The verbs permitted in the profile are listed on the [vocabulary](vocabulary.md) page. 
 
@@ -43,10 +56,33 @@ The verbs permitted in the profile are listed on the [vocabulary](vocabulary.md)
 }
 ```
 
+<a name="object"></a>
 ## Object
 The objectType of Object is restricted to Activity in the profile. The activity types permitted in the profile are listed on the [vocabulary](vocabulary.md) page.
 
 ... 
 
+<a name="result"></a>
+## Result
+...
+
+<a name="context"></a>
 ## Context
 ...
+
+<a name="extensions"></a>
+## Extensions
+
+### Grep
+Alignments to [Grep](http://grepwiki.udir.no/), the national educational framework and curriculum for K-12. Structured as extensions for inclusion in (Object/Context?). The structure draws on the Grep [Ontology](http://psi.udir.no/ontologi/Kl06/) and facilitates [SPARQL endpoint](http://data.udir.no/kl06/sparql) and JSON retrieval. 
+ 
+##### Compentence aim
+``` Javascript
+"extensions": {
+	"http://psi.udir.no/ontologi/kl06/base-element": {
+		"http://psi.udir.no/ontologi/kl06/grep-type": "http://psi.udir.no/ontologi/kl06/kompetansemaal",
+		"http://psi.udir.no/ontologi/kl06/uri": "http://psi.udir.no/kl06/K15095",
+		"http://psi.udir.no/ontologi/kl06/url-data": "http://data.udir.no/kl06/K15095"
+	}		
+}
+```
