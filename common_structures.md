@@ -78,12 +78,19 @@ Alignments to [Grep](http://grepwiki.udir.no/), the national educational framewo
  
 ##### Compentence aim
 ``` Javascript
+Alt:
 "extensions": {
-	"http://psi.udir.no/ontologi/kl06/base-element": {
-		"http://psi.udir.no/ontologi/kl06/grep-type": "http://psi.udir.no/ontologi/kl06/kompetansemaal",
-		"http://psi.udir.no/ontologi/kl06/uri": "http://psi.udir.no/kl06/K15095",
-		"http://psi.udir.no/ontologi/kl06/url-data": "http://data.udir.no/kl06/K15095"
-	}		
+	"http://schema.org/educationalAlignment": {
+		...
+		"http://schema.org/targetUrl": "http://data.udir.no/kl06/K15095"
+	}
+}
+
+Alt:
+"extensions": {
+	"http://psi.udir.no/ontologi/kl06/grep-type": "http://psi.udir.no/ontologi/kl06/kompetansemaal",
+	"http://psi.udir.no/ontologi/kl06/uri": "http://psi.udir.no/kl06/K15095",
+	"http://psi.udir.no/ontologi/kl06/url-data": "http://data.udir.no/kl06/K15095"
 }
 
 Alt:
