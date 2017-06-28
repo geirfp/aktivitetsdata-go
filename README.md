@@ -21,4 +21,4 @@ The vocabulary is based on the [ADL Vocabulary](http://xapi.vocab.pub/datasets/a
 * [Common Structures](common_structures.md)
 
 ## Recipes
-...
+Recipes specifies ways to capture the same experience using the same set of statements across Learning Record Providers.
