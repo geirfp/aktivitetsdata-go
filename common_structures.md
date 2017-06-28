@@ -85,4 +85,9 @@ Alignments to [Grep](http://grepwiki.udir.no/), the national educational framewo
 		"http://psi.udir.no/ontologi/kl06/url-data": "http://data.udir.no/kl06/K15095"
 	}		
 }
+
+Alt:
+"extensions": {
+	"http://psi.udir.no/ontologi/kl06/url-data": "http://data.udir.no/kl06/K15095"		
+}
 ```
