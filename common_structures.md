@@ -74,7 +74,7 @@ The objectType of Object is restricted to Activity in the profile. The activity 
 ## Extensions
 
 ### Grep
-Alignments to [Grep](http://grepwiki.udir.no/), the national educational framework and curriculum for K-12. Structured as extensions for inclusion in (Object/Context?). The structure draws on the Grep [Ontology](http://psi.udir.no/ontologi/Kl06/) and facilitates [SPARQL endpoint](http://data.udir.no/kl06/sparql) and JSON retrieval. 
+Alignments to [Grep](http://grepwiki.udir.no/), the national educational framework and curriculum for K-12. Structured as extensions for inclusion in (Object/Context?). The structure draws upon the Grep [Ontology](http://psi.udir.no/ontologi/Kl06/) and facilitates [SPARQL endpoint](http://data.udir.no/kl06/sparql) and JSON retrieval. 
  
 ##### Compentence aim
 ``` Javascript
