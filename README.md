@@ -12,7 +12,7 @@ A Norwegian vocabulary - based on the the [ADL Vocabulary](http://xapi.vocab.pub
 ## Recipes
 Recipes specifies ways to capture the same experience using the same set of statements across Learning Record Providers.
 
-* [Example]()
+* [Example](recipes/test.json)
 
 ## Assets
 
