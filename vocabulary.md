@@ -1,5 +1,5 @@
 # Vocabulary
-The vocabulary - based on the the [ADL Vocabulary](http://xapi.vocab.pub/datasets/adl/) - is being developed by Standards Norway Committee for Learning Technology ([SN/K 186](http://www.standard.no/fagomrader/ikt/laringsteknologi/))
+This vocabulary - based on the the [ADL Vocabulary](http://xapi.vocab.pub/datasets/adl/) - is being developed by Standards Norway Committee for Learning Technology ([SN/K 186](http://www.standard.no/fagomrader/ikt/laringsteknologi/)).
 
 * [Verbs](#verbs)
 * [Activity Types](#activityTypes)
