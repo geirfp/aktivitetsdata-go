@@ -7,10 +7,10 @@ Common Structures gives guidance on the way statements following the profile may
 * [Result](#result)
 * [Context](#context)
 * [Extensions](#extensions)
+* [Example Statements](#examples)
 
 <a name="actor"></a>
 ## Actor
-The profile supports both Agent and Group as objectType of Actor.
 
 ### Agent 
 
@@ -44,23 +44,50 @@ An identified group on Dataporten. More information on Dataporten [Groups](https
 
 <a name="verb"></a>
 ## Verb
-The verbs permitted in the profile are listed on the [vocabulary](vocabulary.md) page. 
+Verbs in the profile are listed on the [vocabulary](vocabulary.md) page. 
 
 ``` Javascript
 "verb": {
-	"id": "http://adlnet.gov/expapi/verbs/attempted",
+	"id": "http://adlnet.gov/expapi/verbs/launched",
 	"display": {
-		"en": "attempted",
-		"no": "forsøkte"
+		"en": "launched",
+		"no": "begynte"
 	}
 }
 ```
 
 <a name="object"></a>
 ## Object
-The objectType of Object is restricted to Activity in the profile. The activity types permitted in the profile are listed on the [vocabulary](vocabulary.md) page.
 
-... 
+<a name="activity"></a>
+### Activity
+Activity Types in the profile are listed on the [vocabulary](vocabulary.md) page. More information on Activity [extensions](#activityExtensions).
+
+``` Javascript
+"object": {
+	"objectType": "Activity",
+	"id": "https://www.nrk.no/skole/?mediaId=19864",
+	"definition": {
+		"name": "Kosmos",
+		"type": "http://adlnet.gov/expapi/activities/media",
+		"extensions": {
+			"http://schema.org/educationalAlignment": {
+				"http://schema.org/educationalFramework": "Kunnskapsløftet",
+				"http://schema.org/targetDescription": "beskrive universet og ulike teorier for hvordan det har utviklet seg",
+				"http://schema.org/targetName": "K15097",
+				"http://schema.org/targetUrl": "http://data.udir.no/kl06/K15097"
+			},
+			"http://schema.org/publisher": {
+				"http://schema.org/identifier": "https://api.feide.no/2/sp/96213",
+				"http://schema.org/legalName": "NRK Skole"
+			}
+		}
+	}
+}
+```
+
+#### Metadata
+Hosted metadata...
 
 <a name="result"></a>
 ## Result
@@ -68,33 +95,149 @@ The objectType of Object is restricted to Activity in the profile. The activity 
 
 <a name="context"></a>
 ## Context
-...
+More information on Context [extensions](#contextExtensions).
+
+``` Javascript
+"context": {
+	"extensions": {
+		"http://schema.org/affiliation": [
+			{
+        		"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/enhet/976820037",
+        		"http://schema.org/legalName": "Oslo kommune Utdanningsetaten"
+        	}, {
+        		"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/underenhet/974589710",
+				"http://schema.org/legalName": "Bryn skole"
+			}
+		]
+	}
+}
+
+```
+
 
 <a name="extensions"></a>
 ## Extensions
 
-### Grep
-Alignments to [Grep](http://grepwiki.udir.no/), the national educational framework and curriculum for K-12. Structured as extensions for inclusion in (Object/Context?). The structure draws upon the Grep [Ontology](http://psi.udir.no/ontologi/Kl06/) and facilitates [SPARQL endpoint](http://data.udir.no/kl06/sparql) and JSON retrieval. 
+<a name="activityExtensions"></a>
+### Activity
+
+#### Educational alignment
+An alignment to an established educational framework. Makes use of the [educationalAlignment](http://schema.org/educationalAlignment) *property* and the [AlignmentObject](http://schema.org/AlignmentObject) *type* from [LRMI](http://lrmi.dublincore.net) and [Schema.org](http://schema.org). 
+
+##### Grep
+An alignment to [Grep](https://www.udir.no/om-udir/data/kl06-grep/). More information on [GrepWiki](http://grepwiki.udir.no/).
  
-##### Compentence aim
+###### Compentence aim
 ``` Javascript
-Alt:
 "extensions": {
 	"http://schema.org/educationalAlignment": {
-		...
-		"http://schema.org/targetUrl": "http://data.udir.no/kl06/K15095"
+		"http://schema.org/educationalFramework": "Kunnskapsløftet",
+		"http://schema.org/targetDescription": "beskrive universet og ulike teorier for hvordan det har utviklet seg",
+		"http://schema.org/targetName": "K15097",
+		"http://schema.org/targetUrl": "http://data.udir.no/kl06/K15097"
+	}
+}
+```
+
+#### Publisher
+The publisher of an [Activity](#activity) (learning resource). Makes use of the [publisher](http://schema.org/publisher) *property* and the [Organization](http://schema.org/Organization) *type* from [Schema.org](http://schema.org). More information on [Feide API](https://docs.feide.no/api/).
+
+```Javascript
+"extensions": {
+	"http://schema.org/publisher": {
+		"http://schema.org/identifier": "https://api.feide.no/2/sp/96213",
+		"http://schema.org/legalName": "NRK Skole"
+}
+```
+
+<a name="contextExtensions"></a>
+### Context
+
+#### Affiliation
+
+An organization that the [Actor](#actor) is affiliated with. Makes use of the [affiliation](http://schema.org/affiliation) *property* and the [Organization](http://schema.org/Organization) *type* from [Schema.org](http://schema.org). More information on [Feide API](https://docs.feide.no/api/) and [Register for Legal Entities API](http://data.brreg.no/oppslag/enhetsregisteret/).
+
+##### School owner
+
+``` Javascript
+"extensions": {
+	"http://schema.org/affiliation": {
+		"http://schema.org/identifier": "https://api.feide.no/2/org/86",
+		"http://schema.org/legalName": "Oslo kommune Utdanningsetaten"
 	}
 }
 
-Alt:
 "extensions": {
-	"http://psi.udir.no/ontologi/kl06/grep-type": "http://psi.udir.no/ontologi/kl06/kompetansemaal",
-	"http://psi.udir.no/ontologi/kl06/uri": "http://psi.udir.no/kl06/K15095",
-	"http://psi.udir.no/ontologi/kl06/url-data": "http://data.udir.no/kl06/K15095"
+	"http://schema.org/affiliation": {
+		"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/enhet/976820037",
+		"http://schema.org/legalName": "Oslo kommune Utdanningsetaten"
+	}
 }
+```
 
-Alt:
+##### School
+
+``` Javascript
 "extensions": {
-	"http://psi.udir.no/ontologi/kl06/url-data": "http://data.udir.no/kl06/K15095"		
+	"http://schema.org/affiliation": {
+		"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/underenhet/974589710",
+		"http://schema.org/legalName": "Bryn skole"
+	}
 }
+```
+
+<a name="examples"></a>
+## Example Statements
+
+### Example 1: ...
+``` Javascript
+{	
+	"actor": {
+		"objectType": "Agent",
+		"account": {
+			"homepage": "https://auth.dataporten.no",
+			"name": "76a7a061-3c55-430d-8ee0-6f82ec42501f"
+		}
+	},
+	"verb": {
+		"id": "http://adlnet.gov/expapi/verbs/launched",
+		"display": {
+			"en": "launched",
+			"no": "begynte"
+		}
+	},
+	"object": {
+		"objectType": "Activity",
+		"id": "https://www.nrk.no/skole/?mediaId=19864",
+		"definition": {
+			"name": "Kosmos",
+			"type": "http://adlnet.gov/expapi/activities/media",
+			"extensions": {
+				"http://schema.org/educationalAlignment": {
+					"http://schema.org/educationalFramework": "Kunnskapsløftet",
+					"http://schema.org/targetDescription": "beskrive universet og ulike teorier for hvordan det har utviklet seg",
+					"http://schema.org/targetName": "K15097",
+					"http://schema.org/targetUrl": "http://data.udir.no/kl06/K15097"
+				},
+				"http://schema.org/publisher": {
+					"http://schema.org/identifier": "https://api.feide.no/2/sp/96213",
+					"http://schema.org/legalName": "NRK Skole"
+				}
+			}
+		}
+	},
+	"context": {
+		"extensions": {
+			"http://schema.org/affiliation": [
+				{
+        			"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/enhet/976820037",
+        			"http://schema.org/legalName": "Oslo kommune Utdanningsetaten"
+        		}, {
+        			"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/underenhet/974589710",
+					"http://schema.org/legalName": "Bryn skole"
+				}
+			]
+		}
+	}
+}	
 ```
