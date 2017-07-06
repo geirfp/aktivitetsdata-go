@@ -4,7 +4,7 @@ This repository provides a vocabulary and guidance on the semantics and structur
 How to contribute...
 
 ## Profile 
-A vocabulary - based on the the [ADL Vocabulary](http://xapi.vocab.pub/datasets/adl/) - is being developed by the Standards Norway Committee for Learning Technology ([SN/K 186](http://www.standard.no/fagomrader/ikt/laringsteknologi/)). Common Structures gives guidance on the way statements following the profile may be structured, including the use of extensions.
+A vocabulary - based on the the [ADL Vocabulary](http://xapi.vocab.pub/datasets/adl/) - is being developed by Standards Norway Committee for Learning Technology ([SN/K 186](http://www.standard.no/fagomrader/ikt/laringsteknologi/)). Common Structures gives guidance on the way statements following the profile may be structured, including the use of extensions.
 
 * [Vocabulary](vocabulary.md)
 * [Common Structures](common_structures.md)
