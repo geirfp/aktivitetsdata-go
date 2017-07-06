@@ -101,19 +101,17 @@ More information on Context [extensions](#contextExtensions).
 "context": {
 	"extensions": {
 		"http://schema.org/affiliation": [
-			{
+		{
         		"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/enhet/976820037",
         		"http://schema.org/legalName": "Oslo kommune Utdanningsetaten"
         	}, {
         		"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/underenhet/974589710",
-				"http://schema.org/legalName": "Bryn skole"
-			}
-		]
+			"http://schema.org/legalName": "Bryn skole"
+		}]
 	}
 }
 
 ```
-
 
 <a name="extensions"></a>
 ## Extensions
@@ -147,6 +145,7 @@ The publisher of an [Activity](#activity) (learning resource). Makes use of the 
 	"http://schema.org/publisher": {
 		"http://schema.org/identifier": "https://api.feide.no/2/sp/96213",
 		"http://schema.org/legalName": "NRK Skole"
+	}
 }
 ```
 
