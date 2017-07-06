@@ -1,24 +1,25 @@
-# xAPI profile and recipes for norwegian K-12 sector
-This repository provides guidelines for structuring [xAPI](https://github.com/adlnet/xAPI-Spec) statements.
+# Profile and recipes for Activity Data
+This repository provides a vocabulary and guidance on the semantics and structure of [xAPI](https://github.com/adlnet/xAPI-Spec) Statements in norwegian K-12. 
 
-Initial scope is restricted to Learning Record Providers and the Statements API. More specifically:
-
-* Actor - Verb - Activity
-
-Initial scope is expected to be revised and expanded. 
-
-Dependencies:
-
-* [Dataporten](https://docs.dataporten.no/)
-* [Grep](http://grepwiki.udir.no/)
-
-How to contribute?...
+How to contribute...
 
 ## Profile 
-The vocabulary is based on the [ADL Vocabulary](http://xapi.vocab.pub/datasets/adl/) and is maintained by Standards Norway Committee for Learning Technology ([SN/K 186](http://www.standard.no/fagomrader/ikt/laringsteknologi/)). Common Structures gives guidance on the way statements following the profile may be structured, including the use of extensions.
+A Norwegian vocabulary - based on the the [ADL Vocabulary](http://xapi.vocab.pub/datasets/adl/) - is being developed by the Standards Norway Committee for Learning Technology ([SN/K 186](http://www.standard.no/fagomrader/ikt/laringsteknologi/)). Common Structures gives guidance on the way statements following the profile may be structured, including the use of extensions.
 
 * [Vocabulary](vocabulary.md)
 * [Common Structures](common_structures.md)
 
 ## Recipes
 Recipes specifies ways to capture the same experience using the same set of statements across Learning Record Providers.
+
+* [Example]()
+
+## Assets
+
+* [The Experience API (xAPI)](https://github.com/adlnet/xAPI-Spec) - Activity Data specification
+* [Dataporten](https://docs.dataporten.no/) - Service plattform for the educational sector
+* [Grep](https://www.udir.no/om-udir/data/kl06-grep/) - Educational framework and curriculum for K-12
+* [Feide API](https://docs.feide.no/api/) - Access to various data about organizations and services connected to Feide
+* [Enhetsregisteret API](http://data.brreg.no/oppslag/enhetsregisteret/) - The Central Coordinating Register for Legal Entities
+* [Learning Resource Metadata Initiative (LRMI)](http://lrmi.dublincore.net/) - Metadata specification
+* [Schema.org](http://schema.org/) - Vocabularies for structured data on the Internet
