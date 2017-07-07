@@ -156,9 +156,22 @@ The publisher of an [Activity](#activity) (learning resource). More information 
 
 An organization that the [Actor](#actor) is affiliated with. Makes use of the [affiliation](http://schema.org/affiliation) *property* and the [Organization](http://schema.org/Organization) *type* from [Schema.org](http://schema.org). More information on [Feide API](https://docs.feide.no/api/) and [Register for Legal Entities API](http://data.brreg.no/oppslag/enhetsregisteret/).
 
-##### School owner
+##### School owner and school
 
 ``` Javascript
+"extensions": {
+	"http://schema.org/affiliation": [
+		{
+			"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/enhet/976820037",
+			"http://schema.org/legalName": "Oslo kommune Utdanningsetaten"
+		}, {
+			"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/underenhet/974589710",
+			"http://schema.org/legalName": "Bryn skole"
+		}
+	]
+}
+```
+	
 "extensions": {
 	"http://schema.org/affiliation": {
 		"http://schema.org/identifier": "https://api.feide.no/2/org/86",
@@ -166,22 +179,17 @@ An organization that the [Actor](#actor) is affiliated with. Makes use of the [a
 	}
 }
 
-"extensions": {
-	"http://schema.org/affiliation": {
-		"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/enhet/976820037",
-		"http://schema.org/legalName": "Oslo kommune Utdanningsetaten"
-	}
-}
-```
-
-##### School
-
 ``` Javascript
 "extensions": {
-	"http://schema.org/affiliation": {
-		"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/underenhet/974589710",
-		"http://schema.org/legalName": "Bryn skole"
-	}
+	"http://schema.org/affiliation": [
+		{
+			"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/enhet/976820037",
+			"http://schema.org/legalName": "Oslo kommune Utdanningsetaten"
+		}, {
+			"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/underenhet/974589710",
+			"http://schema.org/legalName": "Bryn skole"
+		}
+	]
 }
 ```
 
@@ -220,7 +228,7 @@ An organization that the [Actor](#actor) is affiliated with. Makes use of the [a
 				},
 				"http://schema.org/publisher": {
 					"http://schema.org/identifier": "https://api.feide.no/2/sp/96213",
-					"http://schema.org/legalName": "NRK Skole"
+					"http://schema.org/name": "NRK Skole"
 				}
 			}
 		}
@@ -229,10 +237,10 @@ An organization that the [Actor](#actor) is affiliated with. Makes use of the [a
 		"extensions": {
 			"http://schema.org/affiliation": [
 				{
-        			"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/enhet/976820037",
-        			"http://schema.org/legalName": "Oslo kommune Utdanningsetaten"
-        		}, {
-        			"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/underenhet/974589710",
+					"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/enhet/976820037",
+					"http://schema.org/legalName": "Oslo kommune Utdanningsetaten"
+				}, {
+					"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/underenhet/974589710",
 					"http://schema.org/legalName": "Bryn skole"
 				}
 			]
