@@ -154,7 +154,7 @@ The publisher of an [Activity](#activity) (learning resource). More information 
 
 #### Affiliation
 
-An organization that the [Actor](#actor) is affiliated with. Makes use of the [affiliation](http://schema.org/affiliation) *property* and the [Organization](http://schema.org/Organization) *type* from [Schema.org](http://schema.org). More information on [Feide API](https://docs.feide.no/api/) and [Register for Legal Entities API](http://data.brreg.no/oppslag/enhetsregisteret/).
+An organization that the [Actor](#actor) is affiliated with. More information on [Feide API](https://docs.feide.no/api/) and [Register for Legal Entities API](http://data.brreg.no/oppslag/enhetsregisteret/).
 
 ##### School owner and school
 
@@ -171,19 +171,12 @@ An organization that the [Actor](#actor) is affiliated with. Makes use of the [a
 	]
 }
 ```
-	
-"extensions": {
-	"http://schema.org/affiliation": {
-		"http://schema.org/identifier": "https://api.feide.no/2/org/86",
-		"http://schema.org/legalName": "Oslo kommune Utdanningsetaten"
-	}
-}
 
 ``` Javascript
 "extensions": {
 	"http://schema.org/affiliation": [
 		{
-			"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/enhet/976820037",
+			"http://schema.org/identifier": "https://api.feide.no/2/org/86",
 			"http://schema.org/legalName": "Oslo kommune Utdanningsetaten"
 		}, {
 			"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/underenhet/974589710",
