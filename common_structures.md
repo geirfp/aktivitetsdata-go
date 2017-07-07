@@ -101,16 +101,16 @@ More information on Context [extensions](#contextExtensions).
 "context": {
 	"extensions": {
 		"http://schema.org/affiliation": [
-		{
-        		"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/enhet/976820037",
-        		"http://schema.org/legalName": "Oslo kommune Utdanningsetaten"
-        	}, {
-        		"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/underenhet/974589710",
-			"http://schema.org/legalName": "Bryn skole"
-		}]
+			{
+				"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/enhet/976820037",
+				"http://schema.org/legalName": "Oslo kommune Utdanningsetaten"
+			}, {
+				"http://schema.org/identifier": "http://data.brreg.no/enhetsregisteret/underenhet/974589710",
+				"http://schema.org/legalName": "Bryn skole"
+			}
+		]
 	}
 }
-
 ```
 
 <a name="extensions"></a>
@@ -120,7 +120,7 @@ More information on Context [extensions](#contextExtensions).
 ### Activity
 
 #### Educational alignment
-An alignment to an established educational framework. Makes use of the [educationalAlignment](http://schema.org/educationalAlignment) *property* and the [AlignmentObject](http://schema.org/AlignmentObject) *type* from [LRMI](http://lrmi.dublincore.net) and [Schema.org](http://schema.org). 
+An alignment to an established educational framework. 
 
 ##### Grep
 An alignment to [Grep](https://www.udir.no/om-udir/data/kl06-grep/). More information on [GrepWiki](http://grepwiki.udir.no/).
