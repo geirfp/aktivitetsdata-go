@@ -79,7 +79,7 @@ Activity Types in the profile are listed on the [vocabulary](vocabulary.md) page
 			},
 			"http://schema.org/publisher": {
 				"http://schema.org/identifier": "https://api.feide.no/2/sp/96213",
-				"http://schema.org/legalName": "NRK Skole"
+				"http://schema.org/name": "NRK Skole"
 			}
 		}
 	}
@@ -138,13 +138,13 @@ An alignment to [Grep](https://www.udir.no/om-udir/data/kl06-grep/). More inform
 ```
 
 #### Publisher
-The publisher of an [Activity](#activity) (learning resource). Makes use of the [publisher](http://schema.org/publisher) *property* and the [Organization](http://schema.org/Organization) *type* from [Schema.org](http://schema.org). More information on [Feide API](https://docs.feide.no/api/).
+The publisher of an [Activity](#activity) (learning resource). More information on [Feide API](https://docs.feide.no/api/).
 
 ```Javascript
 "extensions": {
 	"http://schema.org/publisher": {
 		"http://schema.org/identifier": "https://api.feide.no/2/sp/96213",
-		"http://schema.org/legalName": "NRK Skole"
+		"http://schema.org/name": "NRK Skole"
 	}
 }
 ```
