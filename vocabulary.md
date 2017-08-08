@@ -11,9 +11,9 @@ Label|Description|ID (IRI)|Vocabulary|
 abandoned|Indicates the activity provider has determined that the session was abnormally terminated either by an actor or due to a system failure.|https://w3id.org/xapi/adl/verbs/abandoned|https://w3id.org/xapi/adl
 stoppet|Angir at leverandøren av aktiviteten har fastslått at sesjonen stanset på unormal måte, enten av en deltaker eller på grunn av systemsvikt.
 answered|Indicates the actor replied to a question, where the object is generally an activity representing the question. The text of the answer will often be included in the response inside result.|http://adlnet.gov/expapi/verbs/answered|https://w3id.org/xapi/adl
-besvarte|Angir at deltakeren svarte på et spørsmål der formålet som regel er en aktivitet som representerer spørsmålet. Teksten i svaret blir ofte tatt inn i responsen i resultatet.
+besvarte|Angir at deltakeren svarte på et spørsmål der objektet (som verbet gjelder) som regel er en aktivitet som representerer spørsmålet. Teksten i svaret blir ofte tatt inn i responsen i resultatet.
 asked|Indicates an inquiry by an actor with the expectation of a response or answer to a question.|http://adlnet.gov/expapi/verbs/asked|https://w3id.org/xapi/adl
-spurte|Angir at en deltaker har gjort en forespørsel med forventning med forventning om et svar.
+spurte|Angir at en deltaker har gjort en forespørsel med forventning om å få et svar.
 attempted|Indicates the actor made an effort to access the object. An attempt statement without additional activities could be considered incomplete in some cases.|http://adlnet.gov/expapi/verbs/attempted|https://w3id.org/xapi/adl 
 forsøkte|Angir at deltakeren gjorde et forsøk på å få tilgang til objektet. Et forsøk uten ytterligere aktiviteter kan i enkelte tilfeller anses som ufullstendig.
 attended|Indicates the actor was present at a virtual or physical event or activity.|http://adlnet.gov/expapi/verbs/attended|https://w3id.org/xapi/adl 
