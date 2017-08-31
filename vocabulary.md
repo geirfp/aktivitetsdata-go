@@ -55,7 +55,7 @@ besvarte|Angir at en deltaker reagerte eller svarte på et objekt.
 resumed|Indicates the application has determined that the actor continued or reopened a suspended attempt on an activity.|http://adlnet.gov/expapi/verbs/resumed|https://w3id.org/xapi/adl 
 gjenopptok|Angir at applikasjonen har fastslått at deltakeren fortsatte eller gjenåpnet et utsatt forsøk på en aktivitet.
 satisfied|Indicates that the authority or activity provider determined the actor has fulfilled the criteria of the object or activity.|https://w3id.org/xapi/adl/verbs/satisfied|https://w3id.org/xapi/adl 
-tilfredsstilte|Angir at myndigheten eller en leverandør av en aktivitet har besluttet at deltakeren har oppfylt kriteriene for objektet eller aktiviteten.
+tilfredsstilte|Angir at leverandøren av (eller myndigheten for) aktiviteten har besluttet at deltakeren har oppfylt kriteriene for objektet eller aktiviteten.
 scored|Indicates a numerical value related to an actor's performance on an activity.|http://adlnet.gov/expapi/verbs/scored|https://w3id.org/xapi/adl
 skåret|Angi en numerisk verdi knyttet til en deltakers prestasjon i en aktivitet.
 shared|Indicates the actor's intent to openly provide access to an object of common interest to other actors or groups.|http://adlnet.gov/expapi/verbs/shared|https://w3id.org/xapi/adl 
